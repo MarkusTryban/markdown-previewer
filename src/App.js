@@ -1,12 +1,9 @@
 import React from 'react';
 import './App.css';
+import MarkdownPreview from './MarkdownPreview';
 
 function App() {
-  return (
-    <div className='App'>
-      <header className='App-header'>Markdown Previewer</header>
-    </div>
-  );
+  return <MarkdownPreview />;
 }
 
 export default App;
