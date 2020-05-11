@@ -9,6 +9,10 @@ class MarkdownPreview extends Component {
     };
   }
 
+  onChangeMarkdown = function (markdownValue) {
+    this.setState({ markdownValue });
+  };
+
   render() {
     const { markdown } = this.state;
 
