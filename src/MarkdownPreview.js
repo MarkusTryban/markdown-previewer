@@ -20,7 +20,11 @@ class MarkdownPreview extends Component {
           <h1>Markdown Previewer</h1>
           <div className='containers'>
             <div className='container'>
-              <textarea id='editor' className='container' />
+              <textarea
+                id='editor'
+                className='container'
+                placeholder='Input Markdown Here'
+              />
             </div>
             <div id='preview' className='container'>
               {markdown}
