@@ -41,9 +41,11 @@ class MarkdownPreview extends Component {
           <h1>Markdown Output</h1>
           <br />
           <br />
-          <div id='preview' className='container'>
-            {marked(markdown)}
-          </div>
+          <div
+            id='preview'
+            className='container'
+            dangerouslySetInnerHTML={{ __html: marked(markdown) }}
+          />
         </div>
       </>
     );
