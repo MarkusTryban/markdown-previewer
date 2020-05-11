@@ -15,17 +15,19 @@ class MarkdownPreview extends Component {
     const { markdown } = this.state;
 
     return (
-      <div id='main'>
-        <h1>Markdown Previewer</h1>
-        <div className='containers'>
-          <div className='container'>
-            <textarea id='editor' className='container' />
-          </div>
-          <div id='preview' className='container'>
-            {markdown}
+      <>
+        <div id='main'>
+          <h1>Markdown Previewer</h1>
+          <div className='containers'>
+            <div className='container'>
+              <textarea id='editor' className='container' />
+            </div>
+            <div id='preview' className='container'>
+              {markdown}
+            </div>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 }
