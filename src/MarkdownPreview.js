@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import marked from 'marked';
-import { findByLabelText } from '@testing-library/react';
-
-const markdownTest = ' ### Headers # Header 1';
 
 class MarkdownPreview extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      markdown: markdownTest,
+      markdown: '',
     };
   }
 
@@ -31,6 +28,7 @@ class MarkdownPreview extends Component {
               id='editor'
               className='container'
               placeholder='Input Markdown Here'
+              value={markdown}
             />
           </div>
           <br />
@@ -38,9 +36,7 @@ class MarkdownPreview extends Component {
           <h1>Markdown Output</h1>
           <br />
           <br />
-          <div id='preview' className='container'>
-            {markdown}
-          </div>
+          <div id='preview' className='container' />
         </div>
       </>
     );
