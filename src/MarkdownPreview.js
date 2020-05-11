@@ -19,9 +19,7 @@ class MarkdownPreview extends Component {
     return (
       <>
         <div id='main'>
-          <h1 style={{ display: 'flex', justifyContent: 'center' }}>
-            Markdown Previewer
-          </h1>
+          <h1 id='mainH1'>Markdown Previewer</h1>
           <div className='container'>
             <br />
             <br />

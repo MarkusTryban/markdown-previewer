@@ -4,3 +4,8 @@
   list-style: none;
   vertical-align: baseline;
 }
+
+#mainH1 {
+  display: flex;
+  justify-content: center;
+}
