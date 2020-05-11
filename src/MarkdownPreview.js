@@ -21,27 +21,25 @@ class MarkdownPreview extends Component {
           <h1 style={{ display: 'flex', justifyContent: 'center' }}>
             Markdown Previewer
           </h1>
-          <div className='containers'>
-            <div className='container'>
-              <br />
-              <br />
-              <h1>Markdown Iput</h1>
-              <br />
-              <br />
-              <textarea
-                id='editor'
-                className='container'
-                placeholder='Input Markdown Here'
-              />
-            </div>
+          <div className='container'>
             <br />
             <br />
-            <h1>Markdown Output</h1>
+            <h1>Markdown Iput</h1>
             <br />
             <br />
-            <div id='preview' className='container'>
-              {markdown}
-            </div>
+            <textarea
+              id='editor'
+              className='container'
+              placeholder='Input Markdown Here'
+            />
+          </div>
+          <br />
+          <br />
+          <h1>Markdown Output</h1>
+          <br />
+          <br />
+          <div id='preview' className='container'>
+            {markdown}
           </div>
         </div>
       </>
