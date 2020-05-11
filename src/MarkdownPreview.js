@@ -25,7 +25,7 @@ class MarkdownPreview extends Component {
           <div className='container'>
             <br />
             <br />
-            <h1>Markdown Iput</h1>
+            <h1>Markdown Input</h1>
             <br />
             <br />
             <textarea
