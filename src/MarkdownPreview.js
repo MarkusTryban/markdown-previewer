@@ -21,7 +21,7 @@ class MarkdownPreview extends Component {
             <textarea id='editor' className='container' />
           </div>
           <div id='preview' className='container'>
-            {MarkdownPreview(markdown)}
+            {markdown}
           </div>
         </div>
       </div>
