@@ -33,6 +33,7 @@ class MarkdownPreview extends Component {
               className='container'
               placeholder='Input Markdown Here'
               value={markdown}
+              onChange={(e) => this.onChangeMarkdown(e.target.value)}
             />
           </div>
           <br />
