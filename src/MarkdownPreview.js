@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import marked from 'marked';
 
 const markdownTest = ' ### Headers # Header 1';
 
