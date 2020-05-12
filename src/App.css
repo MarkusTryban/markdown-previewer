@@ -1,11 +1,49 @@
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  vertical-align: baseline;
+#main {
+  display: block;
 }
 
-#mainH1 {
+.containers {
   display: flex;
-  justify-content: center;
+  height: calc(100vh - 68px);
+}
+
+.container {
+  flex-basis: 50%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  padding-top: 10px;
+  display: flex;
+  height: 58px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 50px;
+}
+
+.textInput,
+.textOutput {
+  margin-top: 5px;
+  padding: 0.6em;
+  border: 1px solid #ccc;
+  overflow: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+#editor {
+  font-family: Menlo, Monaco, monospace;
+  font-size: 12px;
+  outline: none;
+  resize: none;
+}
+
+#preview {
+  display: flex;
 }

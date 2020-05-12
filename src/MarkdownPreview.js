@@ -18,32 +18,32 @@ class MarkdownPreview extends Component {
 
     return (
       <>
+        <header className='header'>
+          <h1>Markdown Previewer</h1>
+        </header>
         <div id='main'>
-          <h1 id='mainH1'>Markdown Previewer</h1>
-          <div className='container'>
-            <br />
-            <br />
-            <h1>Markdown Input</h1>
-            <br />
-            <br />
-            <textarea
-              id='editor'
-              className='container'
-              placeholder='Input Markdown Here'
-              value={markdown}
-              onChange={(e) => this.onChangeMarkdown(e.target.value)}
-            />
+          <div className='containers'>
+            <div className='container'>
+              <div className='label'>
+                <span>Markdown Input</span>
+              </div>
+              <textarea
+                id='editor'
+                className='textInput'
+                placeholder='Input Markdown Here'
+                value={markdown}
+                onChange={(e) => this.onChangeMarkdown(e.target.value)}
+              />
+              <div className='label'>
+                <span>Markdown Output</span>
+              </div>
+              <div
+                id='preview'
+                className='textOutput'
+                dangerouslySetInnerHTML={{ __html: marked(markdown) }}
+              />
+            </div>
           </div>
-          <br />
-          <br />
-          <h1>Markdown Output</h1>
-          <br />
-          <br />
-          <div
-            id='preview'
-            className='container'
-            dangerouslySetInnerHTML={{ __html: marked(markdown) }}
-          />
         </div>
       </>
     );
