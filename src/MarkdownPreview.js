@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import marked from 'marked';
+import Placeholder from './Placeholder';
 
 class MarkdownPreview extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      markdown: '',
+      markdown: Placeholder(),
     };
   }
 
@@ -30,7 +31,6 @@ class MarkdownPreview extends Component {
               <textarea
                 id='editor'
                 className='textInput'
-                placeholder='Input Markdown Here'
                 value={markdown}
                 onChange={(e) => this.onChangeMarkdown(e.target.value)}
               />
