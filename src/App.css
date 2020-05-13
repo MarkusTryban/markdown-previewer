@@ -28,6 +28,11 @@ h1 {
   box-sizing: border-box;
 }
 
+.label {
+  color: #000;
+  font-size: 2em;
+}
+
 .textInput,
 .textOutput {
   margin-top: 5px;
