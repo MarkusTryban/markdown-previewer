@@ -1,3 +1,7 @@
+body {
+  background-color: cadetblue;
+}
+
 .header {
   padding-top: 10px;
   display: flex;
@@ -6,7 +10,7 @@
 
 h1 {
   margin: 0;
-  font-size: 50px;
+  font-size: 3.4em;
   color: #000;
 }
 
@@ -41,6 +45,7 @@ h1 {
   overflow: auto;
   flex-grow: 1;
   flex-shrink: 1;
+  box-shadow: 7px 7px 5px #3a3a3a;
 }
 
 #editor {
@@ -52,6 +57,7 @@ h1 {
 
 #preview {
   display: flex;
+  background-color: #fff;
 }
 
 .footer {
