@@ -34,6 +34,8 @@ class MarkdownPreview extends Component {
                 value={markdown}
                 onChange={(e) => this.onChangeMarkdown(e.target.value)}
               />
+            </div>
+            <div className='container'>
               <div className='label'>
                 <span>Markdown Output</span>
               </div>
