@@ -1,3 +1,15 @@
+.header {
+  padding-top: 10px;
+  display: flex;
+  height: 58px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 50px;
+  color: #000;
+}
+
 #main {
   display: block;
 }
@@ -14,17 +26,6 @@
   flex-direction: column;
   height: 100%;
   box-sizing: border-box;
-}
-
-.header {
-  padding-top: 10px;
-  display: flex;
-  height: 58px;
-}
-
-h1 {
-  margin: 0;
-  font-size: 50px;
 }
 
 .textInput,
