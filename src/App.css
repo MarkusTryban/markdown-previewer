@@ -46,6 +46,7 @@ h1 {
   flex-grow: 1;
   flex-shrink: 1;
   box-shadow: 7px 7px 5px #3a3a3a;
+  border-radius: 6px;
 }
 
 #editor {
