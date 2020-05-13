@@ -47,3 +47,18 @@ h1 {
 #preview {
   display: flex;
 }
+
+.footer {
+  width: 450px;
+  text-align: center;
+  display: block;
+  margin: 30px auto 30px auto;
+  font-size: 2em;
+  color: #333;
+}
+
+.footer a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #333;
+}

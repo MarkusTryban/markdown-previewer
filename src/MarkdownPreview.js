@@ -47,6 +47,16 @@ class MarkdownPreview extends Component {
             </div>
           </div>
         </div>
+        <div className='footer'>
+          by{' '}
+          <a
+            href='https://markustryban.com'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Markus Tryban
+          </a>
+        </div>
       </>
     );
   }
