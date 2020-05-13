@@ -54,10 +54,11 @@ h1 {
   font-size: 1.2em;
   outline: none;
   resize: none;
+  background-color: #f4f4f4;
 }
 
 #preview {
-  background-color: #fff;
+  background-color: #f4f4f4;
 }
 
 .footer {
