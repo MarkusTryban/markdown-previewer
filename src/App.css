@@ -51,7 +51,7 @@ h1 {
 
 #editor {
   font-family: Menlo, Monaco, monospace;
-  font-size: 12px;
+  font-size: 1.2em;
   outline: none;
   resize: none;
 }
