@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import marked from 'marked';
 import Placeholder from './Placeholder';
 
+marked.setOptions({ breaks: true });
+
 class MarkdownPreview extends Component {
   constructor(props) {
     super(props);
