@@ -2,7 +2,15 @@ import React, { Component } from 'react';
 import marked from 'marked';
 import Placeholder from './Placeholder';
 
-marked.setOptions({ breaks: true });
+marked.setOptions({
+  renderer: new marked.Renderer(),
+  highlight: function (code, language) {
+    const hljs = require('highlight.js');
+    const validLanguage = hljs.getLanguage(language) ? language : 'plaintext';
+    return hljs.highlight(validLanguage, code).value;
+  },
+  breaks: true,
+});
 
 class MarkdownPreview extends Component {
   constructor(props) {
