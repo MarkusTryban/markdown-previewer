@@ -66,6 +66,10 @@ body {
   resize: none;
 }
 
+#preview {
+  font-size: 1.2em;
+}
+
 .footer {
   font-family: balto, helvetica, sans-serif;
   width: 450px;
